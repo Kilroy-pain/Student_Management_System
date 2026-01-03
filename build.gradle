@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
+}
+
+application {
+    mainClass = 'com.university.management.Main'
+}
+
+tasks.named('run') {
+    standardInput = System.in
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Or 17, depending on what's available/preferred. Using 21 as safe default for modern dev.
+    }
+}

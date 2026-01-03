@@ -1,0 +1,19 @@
+# Build artifacts
+.gradle/
+build/
+bin/
+
+# Dependencies and binaries
+jdk21/
+*.jar
+*.zip
+gradle_home/
+
+# Database
+university.db
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+jdk-21_linux-x64_bin.tar.gz
